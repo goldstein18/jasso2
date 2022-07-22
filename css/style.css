@@ -611,9 +611,14 @@ blockquote cite:before {
     padding: 15px 70px 15px 150px;
     background: #fff;
 }
+.nav-scroll .logo-wrapper .logo{
+    transition: unset;
+    /* visibility: visible; */
+    display: block;
+}
 .logo-wrapper {
     float: left;
-    background: #fff;
+    /* background: #fff; */
     padding: 30px 50px;
 }
 .logo-wrapper .logo h2 {
@@ -648,6 +653,8 @@ blockquote cite:before {
     padding: 0;
     width: 200px;
     text-align: center;
+    /* visibility: hidden; */
+    display: none;
 }
 .logo-img {
     width: 200px;
@@ -4854,6 +4861,10 @@ hr.border-2 {
     .navbar .logo {
         text-align: left;
         margin-left: 0px;
+        display: block;
+    }
+    .navbar .logo .logo-img{
+        right: 0 !important;
     }
     .nav-scroll .logo {
         width: 150px;
